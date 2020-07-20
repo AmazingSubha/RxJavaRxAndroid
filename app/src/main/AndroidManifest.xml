@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.glistersoft.rxjavarxandroid">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".flight_ticket_app.view.FlightTicketActivity"></activity>
+        <activity
+            android:name=".instant_search_app.view.RemoteSearchActivity"
+            android:label="@string/activity_remote_search"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".instant_search_app.view.LocalSearchActivity"
+            android:label="@string/activity_local_search"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".instant_search_app.view.InstantSearchActivity"
+            android:label="@string/instantSearch"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".note_app.view.NoteActivity" />
+        <activity android:name=".example.ActivityExample5" />
+        <activity android:name=".example.ActivityExample4" />
+        <activity android:name=".example.ActivityExample3" />
+        <activity android:name=".example.ActivityExample2" />
+        <activity android:name=".example.ActivityExample1" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
